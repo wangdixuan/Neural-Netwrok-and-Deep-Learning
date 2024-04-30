@@ -4,7 +4,7 @@
 使用数据集：[Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist)数据集
 
 ## Requirements
-```
+```python
 pip install numpy
 pip install matplotlib
 pip install tqdm
@@ -14,7 +14,7 @@ pip install sklearn
 
 ## 参数修改
 本项目允许自定义模型参数，进入`train.py`修改以下参数：
-```
+```python
 # 自定义学习率、隐藏层大小、l2正则化系数
 params = {
   'lr': lr,
@@ -22,8 +22,9 @@ params = {
   'l2': l2
 }
 ```
+
 如需修改激活函数，则修改：
-```
+```python
 # 自定义激活函数（如Sigmoid、Tanh等）
 MNIST_model = Fashion_MNIST_Model(hidden_size, 10, activation_function)
 ```
