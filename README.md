@@ -12,7 +12,8 @@ pip install pickle
 pip install sklearn
 ```
 
-## 训练参数修改
+## 模型训练
+### 训练参数修改
 本项目允许自定义模型参数，进入`train.py`修改以下参数：
 ```python
 # 自定义学习率、隐藏层大小、l2正则化系数
@@ -27,6 +28,18 @@ params = {
 ```python
 # 自定义激活函数（如Sigmoid、Tanh等）
 MNIST_model = Fashion_MNIST_Model(hidden_size, 10, activation_function)
+```
+
+### 如何训练
+运行如下代码，可以进行grid search训练，并自动保存在验证集上最优表现的模型best model在output文件夹下。
+```python
+python train.py
+```
+
+## 模型测试
+运行如下代码，可以在测试集上进行分类，计算准确率，并绘制混淆矩阵保存在figure文件夹下。
+```python
+python test.py
 ```
 
 ## 文件说明
