@@ -12,7 +12,7 @@ pip install pickle
 pip install sklearn
 ```
 
-## 参数修改
+## 训练参数修改
 本项目允许自定义模型参数，进入`train.py`修改以下参数：
 ```python
 # 自定义学习率、隐藏层大小、l2正则化系数
@@ -43,3 +43,11 @@ MNIST_model = Fashion_MNIST_Model(hidden_size, 10, activation_function)
 - 执行`python train.py`进行网格搜索，得到在验证集上最优表现的模型best model，自动保存在output文件夹下。
 - 执行`python test.py`进行测试集上的accuracy计算，绘制混淆矩阵，评测模型质量。
 - 执行`python visualize.py`进行best model的loss、accuracy以及网络参数的可视化。
+
+简易版执行顺序：
+```python
+python preprocess.py
+python train.py
+python test.py
+python visualize.py
+```
