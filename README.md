@@ -34,9 +34,9 @@ MNIST_model = Fashion_MNIST_Model(hidden_size, 10, activation_function)
 - `dataset.py`：实现了基础的数据集类和数据迭代器以及对训练集的划分方法。
 - `model.py`：实现了基础的线性层、激活函数以及适用的两层线性分类器，并且都有对应的参数更新和梯度计算、反向传播方法。其中允许自定义隐藏层大小以及激活函数类型。
 - `utils.py`：实现了基础的负对数损失函数、SGD优化器和指数学习率下降策略。
-- `train.py`：实现了训练pipeline，使用上述自定义的类统一进行数据集构建、模型构建和训练，最终保存不同参数组合下的best model。
-- `test.py`：实现了测试集上的accuracy计算。
-- `visualize.py`：实现了可视化功能，包括训练过程中在训练集和验证集上的loss曲线和验证集上的accuracy曲线，以及对训练好的模型网络参数的可视化。
+- `train.py`：实现了训练pipeline，使用上述自定义的类统一进行数据集构建、模型构建和训练，最终自动保存不同参数组合下的best model在output文件夹下。
+- `test.py`：实现了测试集上的accuracy计算，以及混淆矩阵的绘制，保存在figure文件夹下。
+- `visualize.py`：实现了可视化功能，包括训练过程中在训练集和验证集上的loss曲线和验证集上的accuracy曲线，以及对训练好的模型网络参数的可视化，保存在figure文件夹下。
 
 ## 使用方法
 - 执行`python preprocess.py`进行数据预处理（需保证data文件夹下存在Fashion-MNIST的四个数据集）。
