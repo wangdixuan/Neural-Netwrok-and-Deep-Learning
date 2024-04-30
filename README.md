@@ -1,4 +1,15 @@
 # Neural-Netwrok-and-Deep-Learning
+本项目为复旦大学研究生课程DATA620004《神经网络和深度学习》作业1的代码仓库。
+
+## Requirements
+```
+pip install numpy
+pip install matplotlib
+pip install tqdm
+pip install pickle
+pip install sklearn
+```
+
 ## 文件说明
 - `preprocess.py`：对Fashion-MNIST的四个数据集进行初步处理，将其转化为numpy格式保存方便后续使用。
 - `dataset.py`：实现了基础的数据集类和数据迭代器以及对训练集的划分方法。
