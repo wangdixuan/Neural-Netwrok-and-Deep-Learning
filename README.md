@@ -1,5 +1,6 @@
 # Neural-Netwrok-and-Deep-Learning
 本项目为复旦大学研究生课程DATA620004《神经网络和深度学习》作业1的代码仓库。
+使用数据集：[Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist)数据集
 
 ## Requirements
 ```
