@@ -42,6 +42,12 @@ python train.py
 python test.py
 ```
 
+## 可视化
+运行如下代码，可以进行best model的loss、accuracy以及网络参数热力图的可视化，保存在figure文件夹下。
+```python
+python visualize.py
+```
+
 ## 文件说明
 - `preprocess.py`：对Fashion-MNIST的四个数据集进行初步处理，将其转化为numpy格式保存方便后续使用。
 - `dataset.py`：实现了基础的数据集类和数据迭代器以及对训练集的划分方法。
