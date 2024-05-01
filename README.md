@@ -58,7 +58,7 @@ python visualize.py
 - `visualize.py`：实现了可视化功能，包括训练过程中在训练集和验证集上的loss曲线和验证集上的accuracy曲线，以及对训练好的模型网络参数的可视化，保存在figure文件夹下。
 
 ## 使用方法
-- 执行`python preprocess.py`进行数据预处理（需保证data文件夹下存在Fashion-MNIST的四个数据集）。
+- 执行`python preprocess.py`进行数据预处理（需保证data文件夹下存在Fashion-MNIST的四个数据集，其中train-images-idx3-ubyte由于文件太大没有放到data文件夹中，需手动下载）。
 - 执行`python train.py`进行网格搜索，得到在验证集上最优表现的模型best model，自动保存在output文件夹下。
 - 执行`python test.py`进行测试集上的accuracy计算，绘制混淆矩阵，评测模型质量。
 - 执行`python visualize.py`进行best model的loss、accuracy以及网络参数的可视化。
